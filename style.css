@@ -1,0 +1,147 @@
+body {
+    background-color: #a9adec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+body > header {
+    background-color: #cace91;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: space-around;
+    border-radius: 10%;
+}
+
+.footer {
+    display: flex;   
+    text-decoration: none;          
+    justify-content: center;   
+    align-items: center;     
+    height: 100px;         
+    background-color: #cace91; 
+    text-align: center;        
+    padding: 20px;
+    border-radius: 20%;
+}
+
+.footer > ul > div > li > a {
+    text-decoration: none;
+}
+
+.footer > h2 {
+    color: #e8608e;
+}
+
+
+body > main > article {
+    width: 70%;
+    margin: auto;
+}
+
+#logo {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    color: #e8608e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 18%;
+
+}
+
+.footer > nav {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #cace91;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    color: antiquewhite;
+    height: 15vh;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-logo {
+    color: #e0e1f6; 
+    text-decoration: none; 
+    font-size: 2.5rem;
+    margin-right: 30px;
+}
+
+#nav-links > li {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+  
+
+
+.nav-links {
+    text-decoration: none;
+    font-size: 40px;
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+    background-color: #8d93e8;
+    border-radius: 5px;
+    display: flex; 
+    gap: 20px;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-search input[type= "text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.nav-search button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #a9adec;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-search button:hover {
+    background-color: #8288e5;
+}
+
+body > header > nav {
+    background-color: #cace91;
+}
+
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+img {
+    border-radius: 50%;
+}
+

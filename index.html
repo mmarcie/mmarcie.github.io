@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BrightBlogSite</title>
+    </head>
+<body>
+    <header class="site-header">
+        <h1 id="logo">BrightBlog</h1>
+         <nav class="navbar">
+            <div class="nav-container"
+            <a href="#" class="nav-container"> </a>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">🏠</a></li>
+                <li><a href="#" class="nav-link">🖋️</a></li>
+                <li><a href="#" class="nav-link">📞</a></li>
+                <li><a href="#" class="nav-link">⚙️</a></li>
+            </ul>
+         </nav>
+         <nav>
+            <div class="nav-search">
+                <input type="text" id="navSearch" placeholder="Search...">
+                <button onclick="performSearch()">🔍</button>
+            </div>
+         </nav>
+    </header>
+    <main>
+        <hr>
+        <article>
+            <header>
+                <h2>Main Page</h2>
+                <h3>Article</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo architecto dolorum amet consectetur cumque modi adipisci id tempore et, vel fugit accusamus velit necessitatibus sit quaerat dolor, ut itaque quidem.
+                    Vero dolorum ullam, tempora ad culpa perferendis sunt ducimus, accusamus ipsa corporis voluptatibus quasi totam architecto. Temporibus inventore omnis nobis sapiente dolorum quis, velit praesentium? At delectus molestias quae accusamus?
+                    Quisquam pariatur illum blanditiis nihil quis quo exercitationem perferendis veritatis, laborum distinctio dolor atque omnis, accusantium cumque aliquam totam recusandae, ea ducimus voluptates? Quae, laborum enim. Temporibus architecto numquam dolorem.
+                    Culpa corrupti commodi ipsa, officiis magni nobis, aut esse reprehenderit minima deserunt illo deleniti labore! Aliquid porro vero, vel ducimus quod accusantium. Veritatis, perspiciatis recusandae exercitationem quis numquam magnam magni.
+                    Recusandae, voluptate eveniet! Porro ducimus quos eaque eum deserunt, explicabo fugiat earum. Blanditiis molestiae dignissimos facere earum at vitae quaerat et laborum nam nihil illo corrupti, autem animi ipsam hic.
+                    Iste eius deserunt totam minus eos harum quis explicabo repellendus possimus, fuga, nemo dicta sunt ab reprehenderit inventore ipsa animi optio eligendi nobis. Nulla reprehenderit laborum sed doloremque voluptatem quod.
+                    Repellendus architecto inventore quo, nesciunt ad maiores veritatis perspiciatis natus corrupti sequi deserunt fugit consequatur. Distinctio, optio. Voluptatum asperiores accusantium nemo repudiandae excepturi non, id doloribus. Dolorem eveniet nihil non?</p>
+            </header>
+            <footer>
+                <h3> Author: Marcelina </h3>
+                <img src="https://placebear.com/100/100" alt="profile picture of a bear">
+                <h3> Last posted: 27-09-2024</h3>
+                <a href="https://www.linkedin.com/in/m-marczuk/" target="_blank">Author's Profile</a>
+            </footer>
+        </article>
+        <hr>
+        <aside id="Filters">
+            <section>
+                <title>Filter by Month</title>
+                <nav>
+                    <label for="monthFilter">Filter by Month:</label>
+                    <select id="monthFilter" onchange="filterResults()">
+                        <option value="all">All</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                     </select>
+                     <select> 
+                        <div class="result" data-month="january">January Result </div>
+                        <div class="result" data-month="february">February Result</div>
+                        <div class="result" data-month="march">March Result</div>
+                        <div class="result" data-month="april">April Result</div>
+                        <div class="result" data-month="may">May Result</div>
+                        <div class="result" data-month="june">June Result</div>
+                     </select> 
+                </nav>
+                <title>Filter by Name</title>
+                <nav>
+                    <label>
+                        <label for="nameFilter">Filter by Name:</label>
+                        <select id="NameFilter" onchange="filterResults()">
+                            <option value="all">All</option>
+                            <option value="Marcelina">Marcelina</option>
+                            <option value="Brown">Brown</option>
+                            <option value="Bear">Bear</option>
+                        </select>
+                        <select>
+                          
+                            <div class="result" data-name="Marcelina">Marcelina</div>
+                            <div class="result" data-name="Brown">Brown</div>
+                            <div class="result" data-name="Bear">Bear</div>
+                        </select>
+                    </label>
+                </nav>
+            </section>
+        </aside>
+        <h2>Sign up for our newsletter!</h2>
+        <form action="" method="">
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <br>
+            <label for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+            <br>
+            <label for="favourite_animal">Favourite animal:</label>
+            <input type="radio" name="favourite_animal" id="dog" value="dog">
+            <label for="dog">Dog</label>
+            <input type="radio" name="favourite_animal" id="cat" value="cat">
+            <label for="cat">Cat</label>
+            <input type="radio" name="favourite_animal" id="hedgehog" value="hedgehog">
+            <label for="hedgehog">Hedgehog</label>
+            <br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="england">England</option>
+                <option value="ireland">Ireland</option>
+                <option value="northern_ireland">Northern Ireland</option>
+                <option value="scotland">Scotland</option>
+                <option value="wales">Wales</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="bio">Biography</label>
+            <textarea name="bio" id="bio"></textarea>
+            <br>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Subscribe to our newsletter!</label>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+    <footer class="footer">
+        <h2>BrightBlogSite</h2>
+        <section>
+            <nav>
+                <ul>
+                    <div>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Careers with us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Code of Conduct</a></li>
+                        <li><a href="">Cookies</a></li>
+                   </div>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>
